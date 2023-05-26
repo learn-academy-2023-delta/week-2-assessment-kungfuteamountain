@@ -14,10 +14,18 @@
 
 // Pseudo code:
 
+//function: *3 multBy3
+//input: array
+//return array.multBy3
+
 // a) Create a test with expect statements for each of the variables provided.
+
+//
 
 const numbersArray1 = [6, 7, 8, 9, 10]
 // Expected output: [18, 21, 24, 27, 30]
+
+
 const numbersArray2 = [24, 27, 30, 33, 36]
 // Expected output: [72, 81, 90, 99, 108]
 
@@ -26,6 +34,12 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
 
 // a) Create a test with expect statements for each of the variables provided.
+
+//die descibe- it expect-true or false
+//describe(number ) => {
+//it ( object %3 === 0)
+//expect (object %3 === 0).toEqual(true)
+//}
 
 const object1 = { number: 15 }
 // Expected output: "15 is divisible by three"
