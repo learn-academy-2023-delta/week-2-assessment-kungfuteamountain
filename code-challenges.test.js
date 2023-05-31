@@ -14,7 +14,7 @@
 
 // Pseudo code:
 
-//function: *3 multBy3
+//function: *3 multBy3 const multBy3 => () { }
 //input: array
 //return array.multBy3
 
@@ -32,6 +32,11 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 // b) Create the function that makes the test pass.
 
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
+//const threeDivide=() => {
+// [object] %3 == 0
+// }
+// console.log(threeDivide[object])
+//
 
 // a) Create a test with expect statements for each of the variables provided.
 
@@ -54,6 +59,11 @@ const object3 = { number: -7 }
 
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 
+//.toUpperCase const bigLetters=(word) => {}
+//for each (word) index in randomNoun array turn into a string
+//                          
+// take off first letter toUppase first letter then .join the rest of the word.
+
 // a) Create a test with expect statements for each of the variables provided.
 
 const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
@@ -66,6 +76,9 @@ const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // Pseudo code:
 
 // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
+
+// const firstVowel =() => {}
+// let vowel == ["a", "e", "i", "o", "u"]
 
 // a) Create a test with expect statements for each of the variables provided.
 
