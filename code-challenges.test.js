@@ -31,6 +31,12 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 
 // b) Create the function that makes the test pass.
 
+// describe("greeter", () => {
+//     it("returns a generic greeting", () => {
+//       expect(greeter()).toEqual("Hello, LEARN student!")
+//     })
+//   })
+
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
 //const threeDivide=() => {
 // [object] %3 == 0
@@ -40,11 +46,27 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 
 // a) Create a test with expect statements for each of the variables provided.
 
-//die descibe- it expect-true or false
-//describe(number ) => {
-//it ( object %3 === 0)
-//expect (object %3 === 0).toEqual(true)
-//}
+describe("threeDivide", () => {
+    it("takes a object as an argument and decides if the number inside it is evenly divisible by three or not.", () => {
+      expect(threeDivide(object1)).toEqual("15 is divisible by three")
+      expect(threeDivide(object2)).toEqual("0 is divisible by three")
+      expect(threeDivide(object3)).toEqual("-7 is not divisible by three")
+    })
+  })
+
+const threeDivide=(object) => { 
+//  object.number  %3 == 0  
+   if( object.number  %3 == 0  )
+    return object.number + " is divisible by three"
+   else
+    return object.number + " is not divisible by three"
+}
+
+//  line 59 is the first set of scenerio sought after.
+// checking for a remainder when dividing the object value by 3.
+// upon discovery of a zero remainder output is set to the value of the oject + the string 'is divisble by 3'
+// in the event that the alternate result it unfavorable, execute backup procedure. 
+
 
 const object1 = { number: 15 }
 // Expected output: "15 is divisible by three"
@@ -64,23 +86,54 @@ const object3 = { number: -7 }
 //                          
 // take off first letter toUppase first letter then .join the rest of the word.
 
-// a) Create a test with expect statements for each of the variables provided.
 
+
+// a) Create a test with expect statements for each of the variables provided.
+describe("bigLetters", () => {
+      it("returns an array of Capitallized Words", () => {
+        expect(bigLetters(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+        expect(bigLetters(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
+
+      })
+ })
+
+ //test result  Jest encountered an unexpected token
+
+    // Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
 const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
 const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
 
 // b) Create the function that makes the test pass.
-
+const bigLetters=(array) => { 
+  //    for (i = 0, i <= array.length, i = ++)
+  //     let( word)
+  //    
+  //     return capArray
+  // }
+  
 // Pseudo code:
+//i need a for loop 
+// for each value of the input array
+// filter the first index .toUpperCase // i may need to map
+// concat to the rest of the word
 
 // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
 
-// const firstVowel =() => {}
-// let vowel == ["a", "e", "i", "o", "u"]
+const firstVowel (" ") => {
+  word 
+}
 
 // a) Create a test with expect statements for each of the variables provided.
+//
+// describe("firstVowel", () => {
+//   it("logs the index of the first vowel of a string", () => {
+//     expect(firstVowel(vowelTester1)).toEqual("1")
+//     expect(tfirstVowel(vowelTester2)).toEqual("0")
+//     expect(firstVowel(vowelTester3)).toEqual("2")
+//   })
+// })
 
 const vowelTester1 = "learn"
 // Expected output: 1
@@ -90,5 +143,6 @@ const vowelTester3 = "challenges"
 // Expected output: 2
 
 // b) Create the function that makes the test pass.
-
+//
 // Pseudo code:
+//
