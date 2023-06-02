@@ -46,7 +46,7 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 
 // a) Create a test with expect statements for each of the variables provided.
 
-describe("threeDivide", () => {
+describe("threeDivide" () => {
     it("takes a object as an argument and decides if the number inside it is evenly divisible by three or not.", () => {
       expect(threeDivide(object1)).toEqual("15 is divisible by three")
       expect(threeDivide(object2)).toEqual("0 is divisible by three")
@@ -89,7 +89,7 @@ const object3 = { number: -7 }
 
 
 // a) Create a test with expect statements for each of the variables provided.
-describe("bigLetters", () => {
+describe("bigLetters" () => {
       it("returns an array of Capitallized Words", () => {
         expect(bigLetters(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
         expect(bigLetters(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
@@ -106,7 +106,9 @@ const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
 
 // b) Create the function that makes the test pass.
-const bigLetters=(array) => { 
+const bigLetters = (array) => {
+ array.slice(0, 1).toUpcase.join "the sliced array"
+}
   //    for (i = 0, i <= array.length, i = ++)
   //     let( word)
   //    
@@ -118,11 +120,12 @@ const bigLetters=(array) => {
 // for each value of the input array
 // filter the first index .toUpperCase // i may need to map
 // concat to the rest of the word
+// how to add back the sliced off part?
 
 // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
 
-const firstVowel (" ") => {
-  word 
+const firstVowel = () => {
+  
 }
 
 // a) Create a test with expect statements for each of the variables provided.
@@ -143,6 +146,9 @@ const vowelTester3 = "challenges"
 // Expected output: 2
 
 // b) Create the function that makes the test pass.
-//
+// const firstVowel = () => {
+// 
+// }
 // Pseudo code:
-//
+//i want or return .indexOf(variable equal to aeiou||AEIOU)
+// const vowelSound = "a e i o u || A E I O U"
