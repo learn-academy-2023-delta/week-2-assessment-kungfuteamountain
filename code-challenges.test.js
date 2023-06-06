@@ -130,13 +130,13 @@ const firstVowel = () => {
 
 // a) Create a test with expect statements for each of the variables provided.
 //
-// describe("firstVowel", () => {
-//   it("logs the index of the first vowel of a string", () => {
-//     expect(firstVowel(vowelTester1)).toEqual("1")
-//     expect(tfirstVowel(vowelTester2)).toEqual("0")
-//     expect(firstVowel(vowelTester3)).toEqual("2")
-//   })
-// })
+describe("firstVowel", () => {
+  it("logs the index of the first vowel of a string", () => {
+    expect(firstVowel(vowelTester1)).toEqual("1")
+    expect(tfirstVowel(vowelTester2)).toEqual("0")
+    expect(firstVowel(vowelTester3)).toEqual("2")
+  })
+})
 
 const vowelTester1 = "learn"
 // Expected output: 1
@@ -146,9 +146,13 @@ const vowelTester3 = "challenges"
 // Expected output: 2
 
 // b) Create the function that makes the test pass.
-// const firstVowel = () => {
-// 
-// }
+
+let vowel = "a" || "e"|| "i"|| "o"||"u";
+const firstVowel = (word) => {
+  return word.indexOf(vowel)
+}
+
+
 // Pseudo code:
 //i want or return .indexOf(variable equal to aeiou||AEIOU)
 // const vowelSound = "a e i o u || A E I O U"
