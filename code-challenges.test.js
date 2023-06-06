@@ -152,6 +152,9 @@ const firstVowel = (word) => {
   return word.indexOf(vowel)
 }
 
+console.log(firstVowel(vowelTester1))
+console.log(firstVowel(vowelTester2))
+console.log(firstVowel(vowelTester3))
 
 // Pseudo code:
 //i want or return .indexOf(variable equal to aeiou||AEIOU)
